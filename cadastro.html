@@ -4,17 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Tela de login</title>
+    <title>Tela de cadastro</title>
   </head>
   <body>
     <div class="container">
-      <h1 class="container__title">Formulário de login</h1>
+      <h1 class="container__title">Formulário de cadastro</h1>
       <div class="container__aside-form">
         <aside class="container__aside">
           <img src="./img/image_screen_signup.svg" alt="" />
         </aside>
 
-        <form action="" method="post" class="container__form">
+        <form
+          action="./php/insert_user.php"
+          method="post"
+          class="container__form"
+        >
+          <div class="container__item">
+            <label for="name" class="container__item-label">Nome</label>
+            <input type="text" class="container__item-input" name="name" />
+          </div>
           <div class="container__item">
             <label for="user" class="container__item-label">Usuário</label>
             <input type="text" class="container__item-input" name="user" />
@@ -29,10 +37,15 @@
             />
           </div>
 
-          <div class="buttons">
-            <a class="left-button" href="./cadastro.html">Cadastrar</a>
+          <div class="container__item">
+            <label for="sector" class="container__item-label">Setor</label>
+            <input type="text" class="container__item-input" name="sector" />
+          </div>
 
-            <input class="right-button" type="submit" value="Entrar" />
+          <div class="buttons">
+            <a class="left-button" href="/index.html">Voltar</a>
+
+            <input class="right-button" type="submit" value="Cadastrar" />
           </div>
         </form>
       </div>
