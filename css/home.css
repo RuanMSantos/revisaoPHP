@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    background: tomato;
+    padding: 0px 20px;
+}
+
+nav > h1 {
+    font-size: 40px;
+}
+
+div > a {
+    text-decoration: none;
+    color: black;
+    border-radius: 100%;
+    padding: 20px 30px;
+    border: 2px solid black;
+    font-size: 30px;
+}
